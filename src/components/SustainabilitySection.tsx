@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Leaf, Zap } from 'lucide-react';
 import { ModalIntent } from './Navbar';
+import fleetHubImg from '../assets/images/feature_fleet_yellow_1794585221589.jpg';
 
 interface SustainabilitySectionProps {
   onOpenModal: (intent: ModalIntent, contextLabel?: string) => void;
@@ -35,7 +36,7 @@ export const SustainabilitySection: React.FC<SustainabilitySectionProps> = ({ on
             <div className="relative h-full min-h-[300px] overflow-hidden rounded-2xl border border-white/10 bg-slate-900">
               {!imgError ? (
                 <img
-                  src="/src/assets/images/feature_fleet_yellow_1794585221589.jpg"
+                  src={fleetHubImg}
                   alt="Rapidmate charcoal and sunny yellow electric cargo scooter and EV van charging at an urban hub"
                   referrerPolicy="no-referrer"
                   onError={() => setImgError(true)}

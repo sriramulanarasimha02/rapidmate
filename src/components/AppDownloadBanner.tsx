@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Smartphone } from 'lucide-react';
 import { ModalIntent } from './Navbar';
+import appPreviewImg from '../assets/images/app_preview_yellow_1794585221865.jpg';
 
 interface AppDownloadBannerProps {
   onOpenModal: (intent: ModalIntent, contextLabel?: string) => void;
@@ -85,7 +86,7 @@ export const AppDownloadBanner: React.FC<AppDownloadBannerProps> = ({ onOpenModa
             <div className="relative min-h-[280px] border-t border-slate-950/10 bg-slate-200 lg:col-span-6 lg:border-t-0 lg:border-l">
               {!imgError ? (
                 <img
-                  src="/src/assets/images/app_preview_yellow_1794585221865.jpg"
+                  src={appPreviewImg}
                   alt="Rapidmate mobile app displaying live yellow delivery route tracking on a smartphone"
                   referrerPolicy="no-referrer"
                   onError={() => setImgError(true)}

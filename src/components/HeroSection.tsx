@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Truck } from 'lucide-react';
 import { ModalIntent } from './Navbar';
+import heroFleetImg from '../assets/images/hero_logistics_yellow_1794585220627.jpg';
 
 interface HeroSectionProps {
   onOpenModal: (intent: ModalIntent, contextLabel?: string) => void;
@@ -94,7 +95,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenModal }) => {
             <div className="relative h-full min-h-[320px] overflow-hidden rounded-2xl border border-slate-200 bg-slate-950 sm:min-h-[400px]">
               {!imgError ? (
                 <img
-                  src="/src/assets/images/hero_logistics_yellow_1794585220627.jpg"
+                  src={heroFleetImg}
                   alt="Rapidmate matte charcoal and sunny yellow electric delivery van and scooter parked outside a Parisian boutique"
                   referrerPolicy="no-referrer"
                   onError={() => setImgError(true)}

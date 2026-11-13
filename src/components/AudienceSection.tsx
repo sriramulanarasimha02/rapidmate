@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Check, Package } from 'lucide-react';
 import { ModalIntent } from './Navbar';
+import audienceFulfillmentImg from '../assets/images/audience_business_fulfillment_1794584907230.jpg';
 
 interface AudienceSectionProps {
   onOpenModal: (intent: ModalIntent, contextLabel?: string) => void;
@@ -189,7 +190,7 @@ export const AudienceSection: React.FC<AudienceSectionProps> = ({ onOpenModal })
           <div className="relative min-h-[280px] border-t border-slate-200 bg-slate-950 lg:col-span-5 lg:border-t-0 lg:border-l">
             {!imgError ? (
               <img
-                src="/src/assets/images/audience_business_fulfillment_1794584907230.jpg"
+                src={audienceFulfillmentImg}
                 alt="Rapidmate dispatch counter with eco-friendly parcels and insulated grocery crates ready for electric courier pickup"
                 referrerPolicy="no-referrer"
                 onError={() => setImgError(true)}
