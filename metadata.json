@@ -1,0 +1,6 @@
+{
+  "name": "Rapidmate — Rapid Eco-Friendly Delivery & Logistics",
+  "description": "On-demand, zero-emission urban delivery and flexible B2B/B2C logistics across France. Real-time tracking, 25-minute average delivery, and 100% electric fleet.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
